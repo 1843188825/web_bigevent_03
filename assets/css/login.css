@@ -2,28 +2,35 @@ html,
 body {
     margin: 0;
     padding: 0;
-    width: 100%;
     height: 100%;
-    background: url("/assets/images/login_bg.jpg")
+    width: 100%;
+    background: url("/assets/images/login_bg.jpg") 
     no-repeat center top;
     background-size: cover;
 }
 .loginAndRegBox {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
     width: 400px;
     height: 310px;
     background-color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
 }
 .title-box {
     width: 100%;
     height: 60px;
     background: url("/assets/images/login_title.png") no-repeat center;
 }
+
 .layui-form {
     padding: 0 30px;
+}
+.links {
+    display: flex;
+    /* 子元素在主轴方向上，从后向前排列 */
+    justify-content: flex-end;
+    font-size: 12px;
 }
 .layui-form-item {
     position: relative;
@@ -35,8 +42,4 @@ body {
 }
 .layui-input {
     padding-left: 32px;
-}
-.links {
-    display: flex;
-    justify-content: flex-end;
 }
