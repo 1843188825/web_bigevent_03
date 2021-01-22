@@ -45,7 +45,7 @@ $(function () {
             success: function (res) {
                 // 判断返回值状态
                 if (res.status !== 0) {
-                    return layer.msg(res.message)
+                    return layer.msg('111')
                 }
                 return layer.msg("更新用户信息成功")
                 // 更新成功，渲染父页面信息
